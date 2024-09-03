@@ -8,9 +8,9 @@ public class VariablesTheme {
         short ramGb = 16;
         System.out.println("Количество оперативной памяти: " + ramGb + " ГБ");
         long capacitySsd = 512;
-        System.out.println("Объем SSD диска: " + capacitySSD + " ГБ");
+        System.out.println("Объем SSD диска: " + capacitySsd + " ГБ");
+        boolean videoCard = true;
         if (videoCard) {
-            boolean videoCard = true;
             System.out.println("Наличие дискретной видеокарты: RX7800XT");
         }
         char usb3 = 52;
@@ -18,7 +18,7 @@ public class VariablesTheme {
         double coreMhz = 4.40;
         System.out.println("Частота ЦП процессора: " + coreMhz + " Ггц");
         float pricePc = 125.820F;
-        System.out.println("Стоимость системного блока: " + pricePC + " тыс. рублей");
+        System.out.println("Стоимость системного блока: " + pricePc + " тыс. рублей");
         System.out.println();
 
         System.out.println("2. Расчет стоимости товара со скидкой");
@@ -86,7 +86,7 @@ public class VariablesTheme {
         char asterisk = '*';
         char atSign = '@';
         char backSlash = '\\';
-        chasr tilsadade = '~';
+        char tilde = '~';
         System.out.println("- 36 - " + dollar);
         System.out.println("- 42 - " + asterisk);
         System.out.println("- 64 - " + atSign);
