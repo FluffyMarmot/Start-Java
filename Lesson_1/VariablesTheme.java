@@ -14,7 +14,7 @@ public class VariablesTheme {
         System.out.println("Количество оперативной памяти: " + ramGb + " ГБ");
         System.out.println("Объем SSD диска: " + capacitySSD + " ГБ");
         if (videoCard) {
-        System.out.println("Наличие дискретной видеокарты: RX7800XT");
+            System.out.println("Наличие дискретной видеокарты: RX7800XT");
         }
         System.out.println("Количество разъемов USB 3.0: " + usb3 + " шт.");
         System.out.println("Частота ЦП процессора: " + coreMhz + " Ггц");
@@ -75,11 +75,11 @@ public class VariablesTheme {
         System.out.println("Исходные значения переменных:" + " " + digOne + " " + digTwo); 
         int digTemp = digOne;
         System.out.println("Первый способ, при помощи третьей переменной:" + digTwo + " " 
-            + digTemp);
+                + digTemp);
         System.out.println("Второй способ, при помощи арифметических операций:" + (digTwo) + " " 
-            + (digTwo / digOne));
+                + (digTwo / digOne));
         System.out.println("Третий способ , с помощью побитовой операции ^:" + " " 
-            + (digOne ^ digTwo ^ digOne) + " " + (digTwo ^ digOne ^ digTwo));
+                + (digOne ^ digTwo ^ digOne) + " " + (digTwo ^ digOne ^ digTwo));
         System.out.println("");
 
         System.out.println("6. Вывод символов и их кодов.");
@@ -103,9 +103,9 @@ public class VariablesTheme {
         System.out.println("    " + slash + "" + backSlash);
         System.out.println("   " + slash + "  " + backSlash);
         System.out.println("  " + slash + "" + underscore + "" + leftParenthesis + " " + rightParenthesis 
-            + "" + backSlash);
+                + "" + backSlash);
         System.out.println(" " + slash + "" + "" + underscore + "" + underscore + "" + underscore 
-            + "" + slash + "" + backSlash + "" + underscore + "" + backSlash);
+                + "" + slash + "" + backSlash + "" + underscore + "" + backSlash);
         System.out.println("");
 
         System.out.println("8. Манипуляции с сотнями, десятками и единицами числа.");
