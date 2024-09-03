@@ -1,7 +1,7 @@
 public class VariableNamesTheme {
     public static void main(String[] args) {
         System.out.println("Разные переменные");
-        // объявляем первое чсило
+        // объявляем первое чиcло
         int num1 = 3;
         // объявляем второе число
         int num2 = 6;
@@ -70,8 +70,8 @@ public class VariableNamesTheme {
         String topName = "Илон Маск";
         System.out.println("22. Полное имя работника месяца: " + topName);
         // заголовок электронной книги
-        String tittleEBook = "Введение в понимание мироздания";
-        System.out.println("23. Заголовок электронной книги: " + tittleEBook);
+        String tittleEbook = "Введение в понимание мироздания";
+        System.out.println("23. Заголовок электронной книги: " + tittleEbook);
         // размер
         int size = 44;
         System.out.println("24. Размер: " + size);
@@ -86,9 +86,8 @@ public class VariableNamesTheme {
         System.out.println("27. Путь до файла: " + pathFile);
         // количество чисел в каждой строке
         int countNumb = 76867;
-        System.out.println("28. Количество чисел в каждой строке: " 
-        + countNumb);
-        System.out.println("");
+        System.out.println("28. Количество чисел в каждой строке: " + countNumb);
+        System.out.println();
         
         System.out.println("Boolean-переменные");
         // сотны равны?
@@ -114,23 +113,20 @@ public class VariableNamesTheme {
         System.out.println("7. Новое? " + isNew);
         // электронная почта действительная?
         boolean isEmailValid = false;
-        System.out.println("8. Электронная почта действительная? " 
-        + isEmailValid);
+        System.out.println("8. Электронная почта действительная? " + isEmailValid);
         // имеются уникальные строки?
         boolean hasEqualStrings = true;
         System.out.println("9. Имеются уникальные строки? " + hasEqualStrings);
-        System.out.println("");
+        System.out.println();
         
         // аббревиатуры
         System.out.println("Аббревиатуры");
         // старый universally unique identifier
         String uuid = "UUID";
-        System.out.println("1. старый universally unique identifier: " 
-        + uuid);
+        System.out.println("1. старый universally unique identifier: " + uuid);
         // производитель оперативной памяти
         String ram = "RAM";
-        System.out.println("2. производитель оперативной памяти: " 
-        + ram);
+        System.out.println("2. производитель оперативной памяти: " + ram);
         // емкость жесткого диска
         String hdd = "HDD";
         System.out.println("3. емкость жесткого диска: " + hdd);
@@ -142,7 +138,6 @@ public class VariableNamesTheme {
         System.out.println("4. новый идентификатор клиента: " + cuid);
         // american standard code for information interchange
         String ascii = "ASCII";
-        System.out.println
-        ("5. american standard code for information interchange: " + ascii);
+        System.out.println("5. american standard code for information interchange: " + ascii);
     }
 }
