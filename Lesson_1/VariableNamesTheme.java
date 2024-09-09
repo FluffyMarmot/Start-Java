@@ -2,22 +2,19 @@ public class VariableNamesTheme {
     public static void main(String[] args) {
         System.out.println("Разные переменные");
         
-        // объявляем первое чиcло
+        // цифра
         int num1 = 3;
-        
-        // объявляем второе число
-        int num2 = 6;
         System.out.println("1. Цифра: " + num1);
-        // рассчет суммы чисел
-        
-        int sumNums = num1 + num2;
+
+        // сумма чисел
+        int sumNums = 52;
         System.out.println("2. Сумма чисел: " + sumNums);
         
-        // рассчитываем произведение чисел
-        int resultMultiplication = num1 * num2;
+        // произведение чисел
+        int resultMultiplication = 790;
         System.out.println("3. Произведение чисел: " + resultMultiplication);
         
-        // объявляем максимальное число
+        // максимальное число
         int maxNum = 8989;
         System.out.println("4. Максимальное число: " + maxNum);
         
@@ -34,11 +31,11 @@ public class VariableNamesTheme {
         System.out.println("7. Исходное число: " + origNum);
         
         // процент по вкладу
-        int contributionPercent = 16;
-        System.out.println("8. Процент по вкладу: " + contributionPercent + "%");
+        int interestRate = 16;
+        System.out.println("8. Процент по вкладу: " + interestRate + "%");
         
         // переменная хранит символ &
-        String symbolAnd = "M&M";
+        String symbolAnd = "&";
         System.out.println("9. Переменная хранит символ &: " + symbolAnd);
         
         // код ошибки
@@ -94,8 +91,8 @@ public class VariableNamesTheme {
         System.out.println("22. Полное имя работника месяца: " + topFullName);
         
         // заголовок электронной книги
-        String ebookTittle = "Введение в понимание мироздания";
-        System.out.println("23. Заголовок электронной книги: " + ebookTittle);
+        String ebookTitle = "Введение в понимание мироздания";
+        System.out.println("23. Заголовок электронной книги: " + ebookTitle);
         
         // размер
         int size = 44;
@@ -119,9 +116,9 @@ public class VariableNamesTheme {
 
         System.out.println("\n Boolean-переменные");
         
-        // сотны равны?
-        boolean hasHundredsEqual = true;
-        System.out.println("1. Сотни равны? " + hasHundredsEqual);
+        // сотни равны?
+        boolean hasEqualHundreds = true;
+        System.out.println("1. Сотни равны? " + hasEqualHundreds);
         
         // компьютер включен?
         boolean isPcOn = false;
@@ -148,8 +145,8 @@ public class VariableNamesTheme {
         System.out.println("7. Новое? " + isNew);
         
         // электронная почта действительная?
-        boolean isEmailValid = false;
-        System.out.println("8. Электронная почта действительная? " + isEmailValid);
+        boolean isValidEmail = false;
+        System.out.println("8. Электронная почта действительная? " + isValidEmail);
         
         // имеются уникальные строки?
         boolean hasUniqueStrings = true;
@@ -171,12 +168,12 @@ public class VariableNamesTheme {
         System.out.println("3. емкость жесткого диска: " + capacityHdd);
         
         // сокращенный uniform resource locator
-        String abbreviatedUrl = "abbreviatedUrl";
-        System.out.println("4. сокращенный uniform resource locator: " + abbreviatedUrl);
+        String shortUrl = "shortUrl";
+        System.out.println("4. сокращенный uniform resource locator: " + shortUrl);
         
         // новый идентификатор клиента
-        String newCuid = "newCuid";
-        System.out.println("5. новый идентификатор клиента: " + newCuid);
+        String newCid = "newCid";
+        System.out.println("5. новый идентификатор клиента: " + newCid);
         
         // american standard code for information interchange
         String ascii = "ASCII";
