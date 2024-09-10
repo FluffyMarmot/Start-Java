@@ -1,8 +1,8 @@
 public class IfElseStatementTheme {
     public static void main(String[] args) {
         System.out.println("1. Перевод псевдокода на язык Java");
-        boolean isMen = false;
-        if (!isMen) {
+        boolean isMale = false;
+        if (!isMale) {
             System.out.println("Добро пожаловать в мужской клуб");
         } else {
             System.out.println("К сожалению наш клуб только для мужчин");
@@ -29,8 +29,8 @@ public class IfElseStatementTheme {
         }
         
         System.out.println("\n2. Поиск большего числа");
-        int numOne = 23222;
-        int numTwo = 23222;
+        int numOne = 123;
+        int numTwo = 223;
         System.out.println("Первое число: " + numOne + " Второе число: " + numTwo);
         if (numOne > numTwo) {
             System.out.println("Первое число больше второго, числа не равны");
@@ -41,78 +41,76 @@ public class IfElseStatementTheme {
         }
     
         System.out.println("\n3. Проверка числа");
-        int digit = 33;
-        if (digit == 0) {
-            System.out.println(" " + digit + " является нулем");
+        int testNum = -56;
+        if (testNum == 0) {
+            System.out.println("Число равно нулю.");
         } else {
-            boolean isNegative = digit < 0;
-            if (isNegative) {
-                if (digit % 2 == 0) {
-                    System.out.println(" " + digit + " отрицательное и четное");
-                } else {
-                    System.out.println(" " + digit + " отрицательное и нечетное");
-                }
-            } else if (digit % 2 == 0) {
-                System.out.println(" " + digit + " положительное и четное");
+            String result = testNum + " является ";
+            if (testNum > 0) {
+                result += "положительным";
             } else {
-                System.out.println(" " + digit + " положительное и нечетное");
+                result += "отрицательным";
             }
+            if (testNum % 2 == 0) {
+                result += " и четным.";
+            } else {
+                result += " и нечетным.";
+            }
+            System.out.println(result);
         }
         
         System.out.println("\n4. Поиск одинаковых цифр в числах");
-        int firstNum = 123;
-        int secondNum = 223;
-        boolean equalityHundreds = firstNum / 100 == secondNum / 100;
-        boolean equalityTens = firstNum / 10 % 10 == secondNum / 10 % 10;
-        boolean equalityUnits = firstNum % 100 == secondNum % 100;
-        if (!equalityUnits | !equalityTens | !equalityHundreds) { 
+        boolean hasEqualityHundreds = numOne / 100 == numTwo / 100;
+        boolean hasEqualityTens = numOne / 10 % 10 == numTwo / 10 % 10;
+        boolean hasEqualityUnits = numOne % 10 == numTwo % 10;
+        if (!hasEqualityUnits && !hasEqualityTens && !hasEqualityHundreds) { 
             System.out.println("Цифры в числах не равны");
-        } else if (equalityUnits && equalityTens && equalityHundreds) {
-            int identicalHundreds = firstNum / 100;
-            int identicalTens = firstNum / 10 % 10;
-            int identicalUnits = firstNum % 100 % 10;
-            System.out.println("Исходные числа: " + firstNum + " " + secondNum);
+        } else if (hasEqualityUnits || hasEqualityTens || hasEqualityHundreds) {
+            System.out.println("Исходные числа: " + numOne + " " + numTwo);
             System.out.println("Одинаковые цифры:");
-            System.out.println(" Разряд сотен: " + identicalHundreds);
-            System.out.println(" Разряд десятков: " + identicalTens);
-            System.out.println(" Разряд единиц: " + identicalUnits);
+        }
+        if (hasEqualityHundreds) {
+            int identicalHundreds = numOne / 100;
+            System.out.println("Разряд сотен: " + identicalHundreds);
+        }
+        if (hasEqualityTens) {
+            int identicalTens = numOne / 10 % 10;
+            System.out.println("Разряд десятков: " + identicalTens);
+        }
+        if (hasEqualityUnits) {
+            int identicalUnits = numOne % 10;
+            System.out.println("Разряд единиц: " + identicalUnits);
         }
 
         System.out.println("\n5. Определение символа по его коду.");
-        char symbolOrDigit = '\u005E';
-        if (Character.isDigit(symbolOrDigit)) {
-            System.out.println(" " + symbolOrDigit + " - Цифра");
-        } else if (Character.isLetter(symbolOrDigit)) {
-            if (Character.isLowerCase(symbolOrDigit)) {
-                System.out.println(" " + symbolOrDigit + " - Маленькая буква");
-            } else if (Character.isUpperCase(symbolOrDigit)) {
-                System.out.println(" " + symbolOrDigit + " - Большая буква");
-            } 
+        char someCode = '\u0031';
+        if (Character.isDigit(someCode)) {
+            System.out.println(" " + someCode + " - Цифра");
+        } else if (Character.isLowerCase(someCode)) {
+            System.out.println(" " + someCode + " - Маленькая буква");
+        } else if (Character.isUpperCase(someCode)) {
+            System.out.println(" " + someCode + " - Большая буква");
         } else { 
-            System.out.println(" " + symbolOrDigit + " - Не буква, не цифра");
+            System.out.println(" " + someCode + " - Не буква, не цифра");
         }
         
         System.out.println("\n6. Подсчет начисленных банком %");
         double balance = 321123.59;
+        double totalBalance = 0;
+        double yearPercent = 0;
         if (balance < 100000) {
-            double totalBalance = balance * 1.05;
-            double yearPercent = balance * 0.05;
-            System.out.println(" Сумма вклада: " + balance);
-            System.out.println(" Сумма начисленных процентов: " + yearPercent);
-            System.out.println(" Итоговая сумма с %: " + totalBalance);
+            totalBalance = balance * 1.05;
+            yearPercent = balance * 0.05;
         } else if ((balance >= 100000) && (balance <= 300000)) {
-            double totalBalance = balance * 1.07;
-            double yearPercent = balance * 0.07;
-            System.out.println(" Сумма вклада: " + balance);
-            System.out.println(" Сумма начисленных процентов: " + yearPercent);
-            System.out.println(" Итоговая сумма с %: " + totalBalance);
+            totalBalance = balance * 1.07;
+            yearPercent = balance * 0.07;
         } else if (balance > 300000) {
-            double totalBalance = balance * 1.1;
-            double yearPercent = balance * 0.1;
-            System.out.println(" Сумма вклада: " + balance);
-            System.out.println(" Сумма начисленных процентов: " + yearPercent);
-            System.out.println(" Итоговая сумма с %: " + totalBalance);
+            totalBalance = balance * 1.1;
+            yearPercent = balance * 0.1;
         }
+        System.out.println(" Сумма вклада: " + balance);
+        System.out.println(" Сумма начисленных процентов: " + yearPercent);
+        System.out.println(" Итоговая сумма с %: " + totalBalance);
         
         System.out.println("\n7. Определение оценки по предметам:");
         double percentageHistory = 59;
